@@ -14,6 +14,10 @@ window.onload = function(){
 		img.src = "assets/book.png",
 		img.style.top = y - 197.5 + "px",
 		img.style.left = x - 143 + "px";
+		img.draggable = false,		 
+		img.ondragstart = function() {
+		      return false;
+		 }
 		body.appendChild(img);
         });
     };
