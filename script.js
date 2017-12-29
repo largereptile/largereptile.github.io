@@ -11,7 +11,7 @@ window.onload = function(){
 		var x = evt.clientX, y = evt.clientY;
 		img = document.createElement("img");
 		img.className = "card"
-		img.src = "http://media-hearth.cursecdn.com/avatars/331/785/42028.png",
+		img.src = "assets/book.png",
 		img.style.top = y - 197.5 + "px",
 		img.style.left = x - 143 + "px";
 		body.appendChild(img);
