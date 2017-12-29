@@ -4,7 +4,7 @@ window.onload = function(){
     });
     
     var body = document.getElementById("main");
-		body.addEventListener("click", function(evt){
+	body.addEventListener("click", function(evt){
         sound.play();
         console.log(evt.clientX);
         console.log(evt.clientY);
