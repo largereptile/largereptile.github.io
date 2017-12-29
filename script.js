@@ -6,9 +6,6 @@ window.onload = function(){
       src: ['assets/look.ogg']
     });
 	
-	var sounds = [sound1, sound1, sound1, sound2];
-	/* I'm sorry */
-	
 	var card = "assets/zola.png";
 	var gold = "assets/zola.gif";
 	
@@ -21,8 +18,10 @@ window.onload = function(){
 		img.className = "card";
 		if (golden) {
 			img.src = "assets/zola.gif";
+			sound1.play();
 		} else {
 			img.src = "assets/zola.png";
+			sound2.play();
 			golden++;
 		};
 		img.style.top = y - 197 + "px",
@@ -32,6 +31,5 @@ window.onload = function(){
 		      return false;
 		 }
 		body.appendChild(img);
-		sounds[Math.floor(Math.random()*4)].play()
         });
     };
