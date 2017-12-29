@@ -8,5 +8,12 @@ window.onload = function(){
         sound.play();
         console.log(evt.clientX);
         console.log(evt.clientY);
+		var x = evt.clientX, y = evt.clientY;
+		img = document.createElement("img");
+		img.className = "card"
+		img.src = "http://media-hearth.cursecdn.com/avatars/331/785/42028.png",
+		img.style.top = y - 197.5 + "px",
+		img.style.left = x - 143 + "px";
+		body.appendChild(img);
         });
     };
