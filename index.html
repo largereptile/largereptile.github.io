@@ -10,25 +10,17 @@
             background-repeat: no-repeat;
             background-size: cover;
          }
+		
+		.main{
+			height: 100vh;
+			width: 100vh;
+		}
     </style>
-    <script>
-    	window.onload = function(){
-	    	var cast_a_spell = new Audio('assets/do_you_want_to_cast_a_spell.ogg');
-			var body = document.querySelector('#body');
-			
-			body.addEventListener('click', function(evt) {
-				cast_a_spell.play();
-			});
-		};
-    
-    </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.7/howler.core.min.js"></script>
     
 </head>
 <body>
-<div id="#body">		
-	</div>	
-	<audio id="audio" display='none' class='hidden'>
-  		<source src="assets/do_you_want_to_cast_a_spell.ogg" type="audio/ogg">
-	</audio> 
+<div id="main">
+</div>
 </body>
 </html>
