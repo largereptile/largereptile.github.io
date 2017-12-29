@@ -24,7 +24,7 @@ window.onload = function(){
 		} else {
 			img.src = "assets/zola.png";
 			golden++;
-		},
+		};
 		img.style.top = y - 197 + "px",
 		img.style.left = x - 143 + "px";
 		img.draggable = false,		 
