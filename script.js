@@ -1,4 +1,8 @@
 window.onload = function(){
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://ptb.discordapp.com/api/webhooks/480840189376200724/AtKh5pFXyVefjjvDFWCl7bRBisYGiN37sDhdlaWXTdroBfPYivcq-pwW6MOVMeH8XSKq", true);
+	xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({ content: 'Page hit', username: 'Hit bot',  avatar_url: 'https://cdn.discordapp.com/attachments/165800036557520896/480840920258838548/partybeard.png'}))
     var sound1 = new Howl({
       src: ['assets/perfect.ogg']
     });
